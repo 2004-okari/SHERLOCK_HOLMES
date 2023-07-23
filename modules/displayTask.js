@@ -1,5 +1,6 @@
 import tasks from './tasks.js';
 import removeTask from './removeTask.js';
+import editTask from './editTask.js';
 
 // Display task using DOM
 function renderTask() {
@@ -27,6 +28,8 @@ function renderTask() {
       renderTask();
     });
   });
+
+  editTask();
 }
 
 export default renderTask;
